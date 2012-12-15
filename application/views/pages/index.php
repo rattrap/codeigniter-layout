@@ -1,0 +1,1 @@
+<p>And this is from the view.</p>
