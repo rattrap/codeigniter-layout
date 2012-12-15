@@ -58,7 +58,9 @@ ___type___ - the file type (css, js)
 
 ___file___ - the file you want to include
 
-___options___ - a more tricky one: if it's a css file then it's for the media, if it's a js file you can use this to specify where the `<script>` tag should be placed (`header` for the <head> tag and `footer` for echoing it before the closing body tag).
+___options___ - a more tricky one: if it's a css file then it's for the media, if it's a js file you can use this to specify where the `<script>` tag should be placed (`header` for the `<head>` tag and `footer` for outputting it before the closing body tag)
+
+___prepend_base_url___ - if you want the base url set in your config file to be added to the file (useful for loading scripts from Google's CDN, for example)
 
 e.g.
 
