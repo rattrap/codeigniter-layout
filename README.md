@@ -8,12 +8,12 @@ Just copy the `layout.php` file to your own `application/library` directory, loa
 
 You can load the library by adding it to your autoload config file
 
-```
+```php
 $autoload['libraries'] = array('layout');
 ```
 or you can load it directly from your controller
 
-```
+```php
 $this->load->library('layout');
 ```
 
@@ -32,7 +32,7 @@ Use this method instead of CodeIgniter's `$this->load->view()`
 
 e.g.
 
-```
+```php
 $data = array();
 $data['todo'] = array('Buy milk', 'Clean house', 'Call mom');
 
@@ -46,7 +46,7 @@ You can also use the `$title_separator` variable.
 
 e.g.
 
-```
+```php
 $this->layout->set_title('Recent posts' . $this->layout->title_separator . 'Blog');
 ```
 
@@ -64,7 +64,7 @@ ___prepend_base_url___ - if you want the base url set in your config file to be 
 
 e.g.
 
-```
+```php
 $this->layout->add_includes('css', 'assets/css/screen.css');
 // outputs: <link rel="stylesheet" type="text/css" href="http://localhost/assets/css/screen.css">
 		
